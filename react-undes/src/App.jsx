@@ -6,7 +6,8 @@ export function App() {
   const [count, setCount] = useState(0);
 
   return <Fragment>
-    {/* <h1>hi</h1> */}
+    <br />
+    <h1>BODY COUNTER BUTTON</h1>
     <div className="card">
       <button onClick={() => setCount((count) => count + 1)}>
         count is {count}

@@ -4,6 +4,7 @@ import './navbar.css'
 export const Navbar = () => {
   return <Fragment>
     <h1>Reusable Navbar</h1>
+    <br />
     <nav className="navbar">
       <ul>
         <li className="nav-item">

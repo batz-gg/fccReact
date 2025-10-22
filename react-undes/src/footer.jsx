@@ -4,6 +4,8 @@ import "./footer.css";
 export const Footer = () => {
   return <Fragment>
       <footer class="footer">
+        <h1>Build Reusable React footer</h1>
+        <br />
         <div class="footer-section">
           <ul>
             <li>
