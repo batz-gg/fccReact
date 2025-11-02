@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './toggleTextApp.css';
+import './toggleText.css';
 
 export const ToggleApp = () => {
   const [isVisible, setIsVisible] = useState(false);
