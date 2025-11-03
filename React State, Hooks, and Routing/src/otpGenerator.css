@@ -1,0 +1,56 @@
+.container {
+    text-align: center;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Гарчиг: OTP Generator */
+#otp-title {
+    font-family: 'Times New Roman', Times, serif; /* Эсвэл өөр гоёмсог serif фонт */
+    font-size: 2.2em;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* OTP код эсвэл үндсэн мессежний хэсэг (131714) */
+#otp-display {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    font-family: monospace; /* Тоог тод харагдуулахын тулд */
+}
+
+/* Таймер болон хугацаа дууссан мессежний хэсэг */
+#otp-timer {
+    font-size: 0.75em;
+    color: #666;
+    margin-bottom: 30px;
+    font-style: italic; /* Зураг дээрх "OTP expired..." мессеж налуу байна. */
+}
+
+/* Товчны загвар */
+#generate-otp-button {
+    background-color: #36454F; /* Бараан цэнхэр/саарал */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#generate-otp-button:hover:not([disabled]) {
+    background-color: #4A5D6B;
+}
+
+#generate-otp-button:disabled {
+    background-color: #A9A9A9; /* Идэвхгүй үед саарал */
+    cursor: not-allowed;
+}

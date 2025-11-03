@@ -1,0 +1,14 @@
+html {
+    margin: 100px;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
