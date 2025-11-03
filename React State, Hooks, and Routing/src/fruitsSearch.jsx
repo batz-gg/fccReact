@@ -8,7 +8,7 @@ export function FruitsSearch() {
   function handleSubmit(e) {
     e.preventDefault();
   }
-
+/* API ашиглах хувилбар */
   useEffect(() => {
     if (query.trim() === '') {
       setResults([]);
@@ -26,7 +26,6 @@ export function FruitsSearch() {
     }, 100);
     return () => clearTimeout(timeoutId);
   }, [query]);
-    
 
   return (
     <div id="search-container">
