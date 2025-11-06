@@ -5,6 +5,7 @@ import { ColorPicker } from './colorPicker.jsx'
 import { FruitsSearch } from './fruitsSearch.jsx'
 import { OTPGenerator } from './otpGenerator.jsx'
 import './main.css'
+import { SuperheroForm } from './heroAppForm.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,5 +13,6 @@ createRoot(document.getElementById('root')).render(
     <ColorPicker />
     <FruitsSearch />
     <OTPGenerator />
+    <SuperheroForm />
   </StrictMode>,
 )
