@@ -6,6 +6,7 @@ import { FruitsSearch } from './fruitsSearch.jsx'
 import { OTPGenerator } from './otpGenerator.jsx'
 import './main.css'
 import { SuperheroForm } from './heroAppForm.jsx'
+import { EventRSVPForm } from './eventRSVP.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
     <FruitsSearch />
     <OTPGenerator />
     <SuperheroForm />
+    <EventRSVPForm />
   </StrictMode>,
 )

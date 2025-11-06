@@ -1,16 +1,6 @@
-/* Ерөнхий суурь */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Цагаан саарал суурь */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
 /* Формын хүрээ */
 form {
+    margin-top: 30px;
     background-color: #ffffff;
     padding: 40px;
     border-radius: 8px;
@@ -28,7 +18,7 @@ h2 {
 }
 /* Дэд гарчиг */
 h3 {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 15px;
     font-size: 18px;
     color: #7966ff;
