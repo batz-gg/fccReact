@@ -1,0 +1,120 @@
+/* Ерөнхий суурь */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Цагаан саарал суурь */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Формын хүрээ */
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Гарчиг */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+/* Дэд гарчиг */
+h3 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #7966ff;
+}
+
+/* Шошго (Label) */
+label {
+    display: block; /* Шошгыг өөр мөрөнд гаргах */
+    margin-top: 15px; /* Элементүүдийн хоорондын зай */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Оролтын талбарууд (Input fields) */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    border-color: #7966ff;
+    outline: none;
+}
+
+/* Чекбоксны хэв маяг */
+input[type="checkbox"] {
+    margin-left: 10px; /* Шошгоноос зай авах */
+    transform: scale(1.2); /* Чекбоксны хэмжээг томруулах */
+}
+
+/* "Bringing additional guests" гэсэн шошгоны хэв маяг, хэрэв тусдаа DIV/бүлэгт ороогүй бол */
+label:last-of-type {
+    display: inline-block; /* Чекбоксны хажууд байлгах */
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Товч (Таны HTML-д товч байхгүй ч, нэмбэл дараахыг ашиглана) */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #7966ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #6a57e0;
+}
+
+/* Товч (Submit RSVP) */
+.submit-btn {
+    /* Товчийг бүх өргөнөөр дүүргэх */
+    width: 100%; 
+    padding: 15px;
+    /* Таны зураг дээрх ягаан-цэнхэр өнгө */
+    background-color: #7966ff; 
+    color: white;
+    border: none;
+    border-radius: 4px; /* Булангуудыг дугуйруулах */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px; /* Дээрх элементүүдээс зай авах */
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    /* Хурууг дарахад өнгө өөрчлөгдөх (интерактив байдал) */
+    background-color: #6a57e0; 
+}
