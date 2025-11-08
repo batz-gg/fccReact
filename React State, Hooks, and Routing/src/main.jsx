@@ -9,7 +9,7 @@ import { SuperheroForm } from './heroAppForm.jsx'
 import { EventRSVPForm } from './eventRSVP.jsx'
 import { ShoppingList } from './shoppingList.jsx'
 import { CurrencyConverter } from './currencyConverter.jsx'
-import { CurrencyConverterTugrik } from './currencyConverter copy.jsx'
+import { CurrencyConverterTugrik } from './currencyConverterMonxansh.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
