@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './colorPicker.css';
-import findComplementaryColor from "./complementaryColor";
+import findComplementaryColor from "./complementaryColor.js";
 
 export const ColorPicker = () => {
   const [bgColor, setBackgroundColor] = useState("#ffffff");

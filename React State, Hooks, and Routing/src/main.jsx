@@ -7,6 +7,7 @@ import { OTPGenerator } from './otpGenerator.jsx'
 import './main.css'
 import { SuperheroForm } from './heroAppForm.jsx'
 import { EventRSVPForm } from './eventRSVP.jsx'
+import { ShoppingList } from './shoppingList.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,5 +17,6 @@ createRoot(document.getElementById('root')).render(
     <OTPGenerator />
     <SuperheroForm />
     <EventRSVPForm />
+    <ShoppingList />
   </StrictMode>,
 )
