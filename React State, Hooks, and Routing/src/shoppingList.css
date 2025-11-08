@@ -6,13 +6,13 @@
   --yellow: #f1be32;
   --golden-yellow: #feac32;
 }
-/*
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-*/
+
 main,
 .container {
   font-family: Arial, sans-serif;
