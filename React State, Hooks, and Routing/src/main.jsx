@@ -8,6 +8,7 @@ import './main.css'
 import { SuperheroForm } from './heroAppForm.jsx'
 import { EventRSVPForm } from './eventRSVP.jsx'
 import { ShoppingList } from './shoppingList.jsx'
+import { CurrencyConverter } from './currencyConverter.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,5 +19,6 @@ createRoot(document.getElementById('root')).render(
     <SuperheroForm />
     <EventRSVPForm />
     <ShoppingList />
+    <CurrencyConverter />
   </StrictMode>,
 )

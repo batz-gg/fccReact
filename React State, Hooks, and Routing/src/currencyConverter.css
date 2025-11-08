@@ -1,0 +1,70 @@
+.currency-converter-container {
+  /* Container-ын ерөнхий загвар */
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #1a1a2e; /* Хар хөх дэвсгэр */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  color: #e0e0e0; /* Цагаандуу текст */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.converter-title {
+  /* Гарчиг */
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.conversion-subtitle {
+  /* Жижиг гарчиг */
+  font-size: 1.1em;
+  margin-bottom: 25px;
+  color: #a0a0b0;
+}
+
+/* Input, Select загвар */
+.converter-input, .converter-select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #3c3c5c;
+  background-color: #2a2a4c; /* Хар бараан Input/Select */
+  color: #ffffff;
+  font-size: 1.1em;
+  box-sizing: border-box; /* Padding нь өргөнд нөлөөлөхгүй */
+  -webkit-appearance: none; /* iOS-ийн стандарт select-ийг устгах */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.converter-input:focus, .converter-select:focus {
+  outline: none;
+  border-color: #5d5d8d;
+}
+
+.converter-label {
+  /* Label загвар */
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #a0a0b0;
+  font-weight: 600;
+}
+
+.converted-amount {
+  /* Хөрвүүлсэн дүнгийн загвар */
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #76ff03; /* Тод ногоон өнгө */
+  background-color: #1a3e0322; /* Маш бүдэг ногоон дэвсгэр */
+  border-radius: 8px;
+}
