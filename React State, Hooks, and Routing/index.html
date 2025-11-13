@@ -5,9 +5,36 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React State, Hooks, and Routing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+    <div class="bg-red-100 border-2 border-red-300 rounded-md md:w-1/2 p-4 mt-4 md:mx-auto flex gap-4 justify-center items-center">
+      <p class="text-red-700 text-xl">
+        <strong>Error!</strong> Something went wrong. Please try again.
+      </p>
+      <button aria-label="Dismiss" class="text-red-700 text-2xl">
+        <span aria-hidden>&times;</span>
+      </button>
+    </div>
+
+    <div class="bg-green-100 border-2 border-green-300 rounded-md md:w-1/2 p-4 mt-4 md:mx-auto flex gap-4 justify-center items-center">
+      <p class="text-green-700 text-xl">
+        <strong>Success!</strong> Your operation completed successfully.
+      </p>
+      <button aria-label="Dismiss" class="text-green-700 text-2xl">
+        <span aria-hidden>&times;</span>
+      </button>
+    </div>
+
+    <div class="bg-yellow-100 border-2 border-yellow-300 rounded-md md:w-1/2 p-4 mt-4 md:mx-auto flex gap-4 justify-center items-center">
+      <p class="text-yellow-700 text-xl">
+        <strong>Warning!</strong> Please be careful with this action.
+      </p>
+      <button aria-label="Dismiss" class="text-yellow-700 text-2xl">
+        <span aria-hidden>&times;</span>
+      </button>
+    </div>
 </html>

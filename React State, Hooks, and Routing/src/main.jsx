@@ -10,6 +10,7 @@ import { EventRSVPForm } from './eventRSVP.jsx'
 import { ShoppingList } from './shoppingList.jsx'
 import { CurrencyConverter } from './currencyConverter.jsx'
 import { CurrencyConverterTugrik } from './currencyConverterMonxansh.jsx'
+import { Board } from './ticTacToe.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,5 +23,6 @@ createRoot(document.getElementById('root')).render(
     <ShoppingList />
     {/* <CurrencyConverter /> */}
     <CurrencyConverterTugrik />
+    <Board />
   </StrictMode>,
 )
