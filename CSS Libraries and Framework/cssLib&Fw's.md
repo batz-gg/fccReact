@@ -1,19 +1,19 @@
-# CSS Libraries and Frameworks Review
+# CSS Сангууд болон Фреймворкуудын Тойм
 
-## CSS Frameworks
+## CSS Фреймворкууд
 
-* **CSS frameworks**: CSS frameworks can speed up your workflow, create a uniform visual style across a website, make your design look consistent across multiple browsers, and keep your CSS code more organized.
-* **Popular CSS frameworks**: Some of the popular CSS frameworks are Tailwind CSS, Bootstrap, Materialize, and Foundation.
-* **Potential disadvantages**:
-  * The CSS provided by the framework might conflict with your custom CSS.
-  * Your website might look similar to other websites using the same framework.
-  * Large frameworks might cause performance issues.
+* **CSS фреймворкууд**: CSS фреймворкууд нь таны ажлын урсгалыг хурдасгах, вэбсайт даяар нэгдмэл харагдах байдлыг бий болгох, олон хөтөч дээр загварыг тогтвортой харагдуулах, мөн CSS кодыг илүү цэгцтэй байлгахад тусалдаг.
+* **Алдартай CSS фреймворкууд**: Tailwind CSS, Bootstrap, Materialize, болон Foundation зэрэг нь алдартай CSS фреймворкуудын жишээ юм.
+* **Боломжит сул талууд**:
+  * Фреймворкоос өгөгдсөн CSS нь таны бичсэн CSS-тэй зөрчилдөж болзошгүй.
+  * Таны вэбсайт ижил фреймворк ашигладаг бусад сайтуудтай төстэй харагдаж магадгүй.
+  * Томоохон фреймворкууд нь гүйцэтгэлийн асуудал үүсгэж болзошгүй.
 
-## Two Types of CSS Frameworks
+## CSS Фреймворкуудын Хоёр Төрөл
 
-* **Utility-first CSS frameworks**: These frameworks have small classes with specific purposes, like setting the margin, padding, or background color. You can assign these small classes directly to the HTML elements as needed. Tailwind CSS is categorized as a utility-first CSS framework.
+* **Utility-first CSS фреймворкууд**: Эдгээр фреймворкууд нь margin, padding эсвэл дэвсгэр өнгө тохируулах зэрэг тодорхой зорилго бүхий жижиг классуудтай байдаг. Та эдгээр жижиг классуудыг HTML элементүүдэд шууд оноож өгөх боломжтой. Tailwind CSS нь utility-first CSS фреймворк ангилалд багтдаг.
 
-Here is an example of using Tailwind CSS to style a button.
+Tailwind CSS ашиглан товчлуурын загвар гаргах жишээ энд байна.
 
 ```html
 <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700">
@@ -21,9 +21,9 @@ Here is an example of using Tailwind CSS to style a button.
 </button>
 ```
 
-* **Component-based CSS frameworks**: These frameworks have pre-built components with pre-defined styles that you can add to your website. The components are available in the official documentation of the CSS framework, and you can copy and paste them into your project. Bootstrap is categorized as a component-based CSS framework.
+* **Component-based CSS фреймворкууд**: Эдгээр фреймворкууд нь вэбсайтдаа нэмэх боломжтой, урьдчилан тодорхойлсон загвар бүхий бэлэн бүрэлдэхүүн хэсгүүдтэй (components) байдаг. Бүрэлдэхүүн хэсгүүд нь CSS фреймворкийн албан ёсны баримт бичигт байдаг бөгөөд та тэдгээрийг төсөл рүүгээ хуулж тавих боломжтой. Bootstrap нь component-based CSS фреймворк ангилалд багтдаг.
 
-Here is an example of using Bootstrap to create a list group. Instead of applying small classes to your HTML elements, you will add the entire component, including the HTML structure.
+Bootstrap ашиглан жагсаалтын бүлэг (list group) үүсгэх жишээ энд байна. HTML элементүүдэд жижиг классууд оноохын оронд та HTML бүтцийг багтаасан бүхэл бүтэн бүрэлдэхүүн хэсгийг нэмэх болно.
 
 ```html
 <div class="card" style="width: 25rem;">
@@ -37,19 +37,19 @@ Here is an example of using Bootstrap to create a list group. Instead of applyin
 
 ## Tailwind CSS
 
-Tailwind is a utility-first CSS framework. Instead of writing custom CSS rules, you build your designs by combining small utility classes directly in your HTML.
+Tailwind бол utility-first CSS фреймворк юм. Өөрийн CSS дүрмүүдийг бичихийн оронд та жижиг utility классуудыг HTML дээрээ шууд хослуулан загвараа бүтээдэг.
 
-### Responsive Design Utilities
+### Responsive Дизайны Utility-ууд
 
-Tailwind uses prefixes such as `sm:`, `md:`, and `lg:` to apply styles at different screen sizes.
+Tailwind нь `sm:`, `md:`, болон `lg:` зэрэг угтваруудыг ашиглан дэлгэцийн өөр өөр хэмжээнд загвар оноодог.
 
 ```html
 <div class="w-full md:w-1/2 lg:flex-row">Responsive layout</div>
 ```
 
-### Flexbox Utilities
+### Flexbox Utility-ууд
 
-Classes like `flex`, `flex-col`, `justify-around`, and `items-center` make it easy to create flexible layouts.
+`flex`, `flex-col`, `justify-around`, болон `items-center` зэрэг классууд нь уян хатан бүтэц (layout) үүсгэхийг хялбар болгодог.
 
 ```html
 <div class="flex flex-col md:flex-row justify-around items-center">
@@ -58,9 +58,9 @@ Classes like `flex`, `flex-col`, `justify-around`, and `items-center` make it ea
 </div>
 ```
 
-### Grid Utilities
+### Grid Utility-ууд
 
-Tailwind includes utilities for CSS Grid, like `grid`, `grid-cols-1`, and `md:grid-cols-3`.
+Tailwind-д `grid`, `grid-cols-1`, болон `md:grid-cols-3` зэрэг CSS Grid-д зориулсан utility-ууд багтдаг.
 
 ```html
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -70,30 +70,30 @@ Tailwind includes utilities for CSS Grid, like `grid`, `grid-cols-1`, and `md:gr
 </div>
 ```
 
-### Spacing Utilities
+### Зайн (Spacing) Utility-ууд
 
-Utilities like `mt-8`, `mx-auto`, `p-4`, and `gap-4` help create consistent spacing without writing CSS.
+`mt-8`, `mx-auto`, `p-4`, болон `gap-4` зэрэг utility-ууд нь CSS бичихгүйгээр жигд зайг бий болгоход тусалдаг.
 
 ```html
 <div class="mt-8 p-4 bg-indigo-600 text-white">Spaced content</div>
 ```
 
-### Typography Utilities
+### Типографийн Utility-ууд
 
-Utilities like `uppercase`, `font-bold`, `font-semibold`, and `text-4xl` control text appearance.
+`uppercase`, `font-bold`, `font-semibold`, болон `text-4xl` зэрэг utility-ууд нь текстийн харагдах байдлыг удирддаг.
 
-You can set font sizes that adjust at breakpoints, such as `text-3xl` `md:text-5xl`.
+Та `text-3xl` `md:text-5xl` гэх мэтээр дэлгэцийн хэмжээнээс хамааран өөрчлөгдөх фонтын хэмжээг тохируулж болно.
 
 ```html
 <h1 class="text-3xl md:text-5xl font-semibold text-center">Responsive Heading
 </h1>
 ```
 
-### Colors and Hover States
+### Өнгө болон Hover Төлөвүүд
 
-Tailwind provides a wide color palette, such as `text-red-700`, `bg-indigo-600`, and `bg-gray-100`.
+Tailwind нь `text-red-700`, `bg-indigo-600`, болон `bg-gray-100` зэрэг өргөн сонголттой өнгөний палитрыг санал болгодог.
 
-Classes like `hover:bg-pink-600` make interactive effects simple.
+`hover:bg-pink-600` зэрэг классууд нь интерактив эффектийг хялбар болгодог.
 
 ```html
 <a href="#" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-md">
@@ -101,11 +101,11 @@ Classes like `hover:bg-pink-600` make interactive effects simple.
 </a>
 ```
 
-### Borders, Rings, and Effects
+### Хүрээ, Ring болон Эффектүүд
 
-* **Borders**: `border-2 border-red-300` adds borders with specified thickness and colors.
-* **Rings**: `ring-1 ring-gray-300` creates outline-like effects often used for focus or cards.
-* **Rounded corners and scaling**: Classes like `rounded-md`, `rounded-xl`, and `scale-105` add polish.
+* **Хүрээ (Borders)**: `border-2 border-red-300` нь тодорхой зузаан болон өнгө бүхий хүрээ нэмдэг.
+* **Rings**: `ring-1 ring-gray-300` нь focus эсвэл картанд ихэвчлэн ашиглагддаг тойм (outline) шиг эффектийг үүсгэдэг.
+* **Дугуйрсан өнцөг болон масштаб**: `rounded-md`, `rounded-xl`, болон `scale-105` зэрэг классууд нь загварыг илүү цэгцтэй болгодог.
 
 ```html
 <div class="p-6 rounded-xl ring-2 ring-fuchsia-500 scale-105">
@@ -113,9 +113,9 @@ Classes like `hover:bg-pink-600` make interactive effects simple.
 </div>
 ```
 
-### Gradients
+### Градиентууд
 
-Tailwind supports gradient utilities like `bg-gradient-to-r from-fuchsia-500 to-indigo-600`.
+Tailwind нь `bg-gradient-to-r from-fuchsia-500 to-indigo-600` зэрэг градиент utility-уудыг дэмждэг.
 
 ```html
 <div class="p-4 text-white bg-gradient-to-r from-fuchsia-500 to-indigo-600">
@@ -123,25 +123,25 @@ Tailwind supports gradient utilities like `bg-gradient-to-r from-fuchsia-500 to-
 </div>
 ```
 
-## CSS Preprocessors
+## CSS Препроцессорууд
 
-* **CSS preprocessor**: A CSS preprocessor is a tool that extends standard CSS. It compiles the code with extended syntax into a native CSS file. It can be helpful for writing cleaner, reusable, less repetitive, and scalable CSS for complex projects.
-* **Features**: Some of the features that can be provided by CSS preprocessors are variables, mixins, nesting, and selector inheritance.
-* **Popular CSS preprocessors**: Some of the popular CSS preprocessors are Sass, Less, and Stylus.
-* **Potential disadvantages**:
-  * Compiling the CSS rules into standard CSS might cause overhead.
-  * The compiled code may be difficult to debug.
+* **CSS препроцессор**: CSS препроцессор нь стандарт CSS-ийг өргөтгөдөг хэрэгсэл юм. Энэ нь өргөтгөсөн синтакс бүхий кодыг энгийн CSS файл руу хөрвүүлдэг. Энэ нь нарийн төвөгтэй төслүүдэд зориулж илүү цэвэр, дахин ашиглах боломжтой, давхардал багатай, өргөтгөх боломжтой CSS бичихэд тустай байж болно.
+* **Онцлогууд**: CSS препроцессоруудын санал болгодог зарим онцлогууд нь хувьсагч (variables), mixins, үүрлэх (nesting), болон селектор удамшил (selector inheritance) юм.
+* **Алдартай CSS препроцессорууд**: Sass, Less, болон Stylus нь алдартай CSS препроцессорууд юм.
+* **Боломжит сул талууд**:
+  * CSS дүрмүүдийг стандарт CSS руу хөрвүүлэх нь нэмэлт ачаалал үүсгэж болзошгүй.
+  * Хөрвүүлсэн кодыг дибаг хийхэд хэцүү байж магадгүй.
 
 ## Sass
 
-* **Sass**: It is one of the most popular CSS preprocessors. Sass stands for "Syntactically Awesome Style Sheets."
-* **Features supported by Sass**: Sass supports features like variables, nested CSS rules, modules, mixins, inheritance, and operators for basic mathematical operations
+* **Sass**: Энэ бол хамгийн алдартай CSS препроцессоруудын нэг юм. Sass гэдэг нь "Syntactically Awesome Style Sheets" гэсэн үгний товчлол юм.
+* **Sass-ийн дэмждэг онцлогууд**: Sass нь хувьсагч, үүрлэсэн CSS дүрмүүд, модулиуд, mixins, удамшил, болон үндсэн математик үйлдлүүдэд зориулсан операторууд зэрэг онцлогуудыг дэмждэг.
 
-## Two Syntaxes Supported by Sass
+## Sass-ийн Дэмждэг Хоёр Синтакс
 
-* **SCSS syntax**: The SCSS (Sassy CSS) expands the basic syntax of CSS. It is the most widely used syntax for Sass. SCSS files have an `.scss` extension.
+* **SCSS синтакс**: SCSS (Sassy CSS) нь CSS-ийн үндсэн синтаксийг өргөтгөдөг. Энэ нь Sass-ийн хамгийн өргөн хэрэглэгддэг синтакс юм. SCSS файлууд нь `.scss` өргөтгөлтэй байдаг.
 
-Here is an example of defining and using a variable in SCSS.
+SCSS дээр хувьсагч тодорхойлж, ашиглах жишээ энд байна.
 
 ```scss
 $primary-color: #3498eb;
@@ -151,9 +151,9 @@ header {
 }
 ```
 
-* **Indented syntax**: The indented syntax was Sass's original syntax and is also known as the "Sass syntax."
+* **Доголтой (Indented) синтакс**: Доголтой синтакс нь Sass-ийн анхны синтакс байсан бөгөөд "Sass синтакс" гэж нэрлэгддэг.
 
-Here is an example of defining and using a variable in the indented syntax.
+Доголтой синтакс дээр хувьсагч тодорхойлж, ашиглах жишээ энд байна.
 
 ```sass
 $primary-color: #3498eb
@@ -164,9 +164,9 @@ header
 
 ### Mixins
 
-* **Mixins**: Mixins allow you to group multiple CSS properties and their values under the name and reuse that block of CSS code throughout your stylesheet.
+* **Mixins**: Mixins нь олон CSS шинж чанар болон тэдгээрийн утгуудыг нэг нэр дор бүлэглэж, тэр CSS кодын блокийг загварын хуудас (stylesheet) даяар дахин ашиглах боломжийг олгодог.
 
-Here is an example of defining a mixin in SCSS syntax. In this case, the mixin is called `center-flex`. It has three CSS properties to center elements using flexbox.
+SCSS синтакс дээр mixin тодорхойлох жишээ энд байна. Энэ тохиолдолд mixin-ийг `center-flex` гэж нэрлэсэн байна. Энэ нь flexbox ашиглан элементүүдийг төвлөрүүлэх гурван CSS шинж чанартай.
 
 ```scss
 @mixin center-flex {
@@ -176,7 +176,7 @@ Here is an example of defining a mixin in SCSS syntax. In this case, the mixin i
 }
 ```
 
-Here is an example of using the mixin you defined.
+Таны тодорхойлсон mixin-ийг ашиглах жишээ энд байна.
 
 ```scss
 section {
