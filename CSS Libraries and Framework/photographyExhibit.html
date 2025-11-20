@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lumina | Photography Exhibit</title>
+  <title>Lumina | Гэрэл зургийн үзэсгэлэн</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Montserrat:wght@300;400;500;700&display=swap&subset=cyrillic,cyrillic-ext"
     rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            serif: ['Playfair Display', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+            serif: ['Lora', 'serif'],
           },
           colors: {
             stone: {
@@ -48,9 +48,9 @@
     class="fixed w-full z-50 top-0 left-0 px-6 py-6 flex justify-between items-center mix-blend-difference text-white">
     <div class="text-2xl font-serif italic tracking-wider">Lumina.</div>
     <div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase opacity-80">
-      <a href="#" class="hover:text-orange-400 transition-colors duration-300">Gallery</a>
-      <a href="#" class="hover:text-orange-400 transition-colors duration-300">Artists</a>
-      <a href="#" class="hover:text-orange-400 transition-colors duration-300">Exhibitions</a>
+      <a href="#" class="hover:text-orange-400 transition-colors duration-300">Галерей</a>
+      <a href="#" class="hover:text-orange-400 transition-colors duration-300">Уран бүтээлчид</a>
+      <a href="#" class="hover:text-orange-400 transition-colors duration-300">Үзэсгэлэнгүүд</a>
     </div>
     <button class="md:hidden text-white">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -66,14 +66,13 @@
       class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-stone-800/20 via-stone-950 to-stone-950 -z-10">
     </div>
     <h1
-      class="font-serif text-5xl md:text-8xl lg:text-9xl mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-stone-600 opacity-0 animate-fade-in-up"
+      class="font-serif text-5xl md:text-8xl lg:text-9xl mb-9 bg-clip-text text-transparent bg-gradient-to-b from-white to-stone-600 opacity-0 animate-fade-in-up"
       style="animation-fill-mode: forwards; animation-delay: 0.2s;">
-      Perspectives
+      Таны харах өнцөг
     </h1>
     <p class="text-stone-400 max-w-md mx-auto text-sm md:text-base tracking-wide leading-relaxed opacity-0 animate-fade-in-up"
       style="animation-fill-mode: forwards; animation-delay: 0.5s;">
-      A curated collection of moments frozen in time. Exploring the beauty of the natural world through the lens of
-      silence.
+      Эргэх хугацаанд элэгдээгүй мөч бүр тань <br /> Байгалийн гоо үзэсгэлэнг аниргүйн дунд мэдрэхүй еэ
     </p>
   </header>
 
@@ -92,9 +91,9 @@
         <div
           class="mt-4 flex justify-between items-end border-b border-stone-800 pb-2 group-hover:border-orange-500/50 transition-colors duration-300">
           <div>
-            <h2 class="font-serif text-2xl italic text-white group-hover:text-orange-100 transition-colors">Roma Aeterna
+            <h2 class="font-serif text-2xl italic text-white group-hover:text-orange-100 transition-colors">Мөнхийн Ром
             </h2>
-            <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Architecture</p>
+            <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Уран барилга</p>
           </div>
           <span class="text-stone-600 text-sm font-mono group-hover:text-orange-400 transition-colors">01</span>
         </div>
@@ -111,9 +110,10 @@
         <div
           class="mt-4 flex justify-between items-end border-b border-stone-800 pb-2 group-hover:border-orange-500/50 transition-colors duration-300">
           <div>
-            <h2 class="font-serif text-2xl italic text-white group-hover:text-orange-100 transition-colors">Silent Peaks
+            <h2 class="font-serif text-2xl italic text-white group-hover:text-orange-100 transition-colors">Аниргүй
+              Оргилууд
             </h2>
-            <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Nature</p>
+            <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Байгаль</p>
           </div>
           <span class="text-stone-600 text-sm font-mono group-hover:text-orange-400 transition-colors">02</span>
         </div>
@@ -130,9 +130,9 @@
         <div
           class="mt-4 flex justify-between items-end border-b border-stone-800 pb-2 group-hover:border-orange-500/50 transition-colors duration-300">
           <div>
-            <h2 class="font-serif text-2xl italic text-white group-hover:text-orange-100 transition-colors">Azure Depths
+            <h2 class="font-serif text-2xl italic text-white group-hover:text-orange-100 transition-colors">Гүн Цэнхэр
             </h2>
-            <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Seascape</p>
+            <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Далай</p>
           </div>
           <span class="text-stone-600 text-sm font-mono group-hover:text-orange-400 transition-colors">03</span>
         </div>
@@ -142,7 +142,8 @@
   </main>
 
   <footer class="border-t border-stone-900 py-12 text-center">
-    <p class="text-stone-600 text-xs tracking-widest uppercase">&copy; 2025 Lumina Gallery. All rights reserved.</p>
+    <p class="text-stone-600 text-xs tracking-widest uppercase">&copy; 2025 Lumina Галерей. Бүх эрх хуулиар
+      хамгаалагдсан.</p>
   </footer>
 
   <style>
