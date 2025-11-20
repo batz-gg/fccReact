@@ -1,28 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photography Exhibit</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div class="main-container grid grid-cols-3 grid-row-1 gap-6">
-      <div class="card p-3 border-3 rounded-full">
-        <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="colosseo" class="rounded-md"/>
-        <h2 class="subheading text-lg font-bold">colosseo</h2>
-        <p class="description text-sm">colosseo</p>
-      </div>
-      <div class="card p-3 border-3 rounded-full">
-        <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="alps" class="rounded-md" />
-        <h2 class="subheading text-lg font-bold">alps</h2>
-        <p class="description text-sm">alps</p>
-      </div>
-      <div class="card p-3 border-3 rounded-full">
-        <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="sea" class="rounded-md" />
-        <h2 class="subheading text-lg font-bold">sea</h2>
-        <p class="description text-sm">sea</p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina | Photography Exhibit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            stone: {
+              850: '#1c1917',
+              950: '#0c0a09',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="bg-stone-950 text-stone-200 font-sans antialiased selection:bg-orange-500 selection:text-white">
+
+  <!-- Navigation / Header -->
+  <nav
+    class="fixed w-full z-50 top-0 left-0 px-6 py-6 flex justify-between items-center mix-blend-difference text-white">
+    <div class="text-2xl font-serif italic tracking-wider">Lumina.</div>
+    <div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase opacity-80">
+      <a href="#" class="hover:text-orange-400 transition-colors duration-300">Gallery</a>
+      <a href="#" class="hover:text-orange-400 transition-colors duration-300">Artists</a>
+      <a href="#" class="hover:text-orange-400 transition-colors duration-300">Exhibitions</a>
     </div>
-  </body>
+    <button class="md:hidden text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="min-h-[60vh] flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-stone-800/20 via-stone-950 to-stone-950 -z-10">
+    </div>
+    <h1
+      class="font-serif text-5xl md:text-8xl lg:text-9xl mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-stone-600 opacity-0 animate-fade-in-up"
+      style="animation-fill-mode: forwards; animation-delay: 0.2s;">
+      Perspectives
+    </h1>
+    <p class="text-stone-400 max-w-md mx-auto text-sm md:text-base tracking-wide leading-relaxed opacity-0 animate-fade-in-up"
+      style="animation-fill-mode: forwards; animation-delay: 0.5s;">
+      A curated collection of moments frozen in time. Exploring the beauty of the natural world through the lens of
+      silence.
+    </p>
+  </header>
+
+  <!-- Gallery Grid -->
+  <main class="max-w-7xl mx-auto px-4 pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+
+      <!-- Card 1 -->
+      <div class="group relative cursor-pointer">
+        <div class="relative overflow-hidden rounded-sm aspect-[3/4]">
+          <div class="absolute inset-0 bg-stone-900/20 group-hover:bg-transparent transition-colors duration-500 z-10">
+          </div>
+          <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="The Colosseum"
+            class="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0" />
+        </div>
+        <div
+          class="mt-4 flex justify-between items-end border-b border-stone-800 pb-2 group-hover:border-orange-500/50 transition-colors duration-300">
+          <div>
+            <h2 class="font-serif text-2xl italic text-white group-hover:text-orange-100 transition-colors">Roma Aeterna
+            </h2>
+            <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Architecture</p>
+          </div>
+          <span class="text-stone-600 text-sm font-mono group-hover:text-orange-400 transition-colors">01</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group relative cursor-pointer md:mt-16">
+        <div class="relative overflow-hidden rounded-sm aspect-[3/4]">
+          <div class="absolute inset-0 bg-stone-900/20 group-hover:bg-transparent transition-colors duration-500 z-10">
+          </div>
+          <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="The Alps"
+            class="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0" />
+        </div>
+        <div
+          class="mt-4 flex justify-between items-end border-b border-stone-800 pb-2 group-hover:border-orange-500/50 transition-colors duration-300">
+          <div>
+            <h2 class="font-serif text-2xl italic text-white group-hover:text-orange-100 transition-colors">Silent Peaks
+            </h2>
+            <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Nature</p>
+          </div>
+          <span class="text-stone-600 text-sm font-mono group-hover:text-orange-400 transition-colors">02</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group relative cursor-pointer">
+        <div class="relative overflow-hidden rounded-sm aspect-[3/4]">
+          <div class="absolute inset-0 bg-stone-900/20 group-hover:bg-transparent transition-colors duration-500 z-10">
+          </div>
+          <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="The Sea"
+            class="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0" />
+        </div>
+        <div
+          class="mt-4 flex justify-between items-end border-b border-stone-800 pb-2 group-hover:border-orange-500/50 transition-colors duration-300">
+          <div>
+            <h2 class="font-serif text-2xl italic text-white group-hover:text-orange-100 transition-colors">Azure Depths
+            </h2>
+            <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Seascape</p>
+          </div>
+          <span class="text-stone-600 text-sm font-mono group-hover:text-orange-400 transition-colors">03</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="border-t border-stone-900 py-12 text-center">
+    <p class="text-stone-600 text-xs tracking-widest uppercase">&copy; 2025 Lumina Gallery. All rights reserved.</p>
+  </footer>
+
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+  </style>
+</body>
+
 </html>
